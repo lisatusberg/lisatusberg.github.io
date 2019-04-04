@@ -1,0 +1,7 @@
+@font-face {
+font-family: "Capture_it";
+src: url("css/fonts/Capture_it.ttf");
+src:
+url("css/fonts/capture_it-webfont.woff") format("woff"),
+url("css/fonts/capture_it-webfont.woff2") format("woff"),
+}
