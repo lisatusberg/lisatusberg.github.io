@@ -1,82 +1,141 @@
 <!DOCTYPE html>
 <html>
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<style>
-* {
-  box-sizing: border-box;
-}
-.menu {
-  float:left;
-  width:20%;
-  text-align:center;
-}
-.menu a {
-  background-color:yellow;
-  padding:8px;
-  margin-top:7px;
-  display:block;
-  width:100%;
-  color:black;
-}
-.main {
-  float:left;
-  width:60%;
-  padding:0 20px;
-}
-.right {
-  background-color:#e5e5e5;
-  float:left;
-  width:20%;
-  padding:15px;
-  margin-top:7px;
-  text-align:center;
-}
+<title>My Band Website</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link href="https://fonts.googleapis.com/css?family=Kanit" rel="stylesheet">
 
-@media only screen and (max-width:620px) {
+<style>
+  body,
+  html {
+    height: 100%;
+    font-family: "Kanit", sans-serif;
+  }
+
+  .bgimg {
+    background-position: center;
+    background-size: cover;
+    background-image: url("img/gabi-home-bg-@2x.jpg");
+    min-height: 75%;
+  }
+
+  ul.my-list-style {
+    display: block;
+  }
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: white;
+    display: inline-block;
+    text-align: left;
+  }
+
+  nav {
+    text-align: center;
+    background-color: #FAFAFF;
+  }
+
+  li {
+    float: left;
+  }
+
+  li a {
+    display: block;
+    color: #001C2F;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: "Kanit", sans-serif;
+    letter-spacing: 2px;
+    font-size: 15px;
+  }
+
+  a:hover:not(.active) {
+    background-color: white;
+  }
+
+  .active {
+    background-color: white;
+  }
+
+  div.top-header {
+    text-align: center;
+  }
+
+  @media only screen and (max-width:620px) {
   /* For mobile phones: */
   .menu, .main, .right {
     width:100%;
   }
-}
+
 </style>
-</head>
-<body style="font-family:Verdana;color:#aaaaaa;">
 
-<div style="background-color:#e5e5e5;padding:15px;text-align:center;">
-  <h1>Hello World - Use GitHub as your Web Server!! YAY!!!</h1>
-  <p>IN ORDER FOR YOU TO PUBLISH HTML PAGES AND HAVE GITHUB WORKING AS A WEB SERVER (https://lisatusberg.github.io/index.html):</p>
+<body>
+  <!-- Header with Logo -->
+  <header>
+    <div class="top-header">
+      <img src="img/gabi-logo-@2x.jpg" alt="Gabi Logo" style="width:500px;height:147px;">
+    </div>
+  </header>
 
-  
-</div>
+  <!-- Links (sit on top) -->
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="discography.html">Discography</a></li>
+      <li><a href="media.html">Media</a></li>
+      <li><a href="merchandise.html">Merchandise</a></li>
+      <li><a href="tour-dates.html">Tour Dates</a></li>
+    </ul>
+  </nav>
 
-<div style="overflow:auto">
-  <div class="menu">
-    <a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_responsive_media_query3">Responsive Template</a>
-    <a href="#">Link 2</a>
-    <a href="#">Link 3</a>
-    <a href="#">Link 4</a>
-  </div>
+  <!-- Header with album image -->
+  <header class="bgimg w3-display-container w3-grayscale-min" id="home">
+    <div class="w3-display-middle w3-center w3-col l6 w3-padding-large">
+      <img src="img/spiritfree-@2x.jpg" alt="spiritfree album" style="width:600px;height:600px;">
+    </div>
+    <div class="w3-display-middle w3-center w3-col 16 w3-padding-large">
+      <button class="w3-button w3-black w3-margin-top">BUY DIGITAL</button>
+      <button class="w3-button w3-black w3-margin-top">BUY PHYSICAL</button>
+      <button class="w3-button w3-black w3-margin-top">STREAM NOW</button>
+    </div>
+  </header>
 
-  <div class="main">
-    <h2>Directions</h2>
-  <ol>
-  <li><b>STEP 1</b> You need to name this repository as username.github.io (where username is YOUR USERNAME) the one you created when you set up your GitHub account - OTHERWISE IT WILL NOT WORK!!!!!!!!</li><br>
-  <li><b>STEP 2</b> You will type username.github.io (where username is EXACTLY YOUR USERNAME) - name your new repository your exact username</li><br>
-  <li><b>STEP 3</b> and you will also check the box INITIALIZE THIS REPOSITORY WITH A README</li><br>
-  <li><b>STEP 4 </b>and then you will click on the GREEN BUTTON that says CREATE REPOSITORY.</li><br>
-  <li><b>STEP 5 </b>AFTER YOU UPLOAD YOUR FILES - index.html, about.html, etc.... you can open any browser and type https://username.github.io/index.html</li><br>
-  <li>or for me, https://lisatusberg.github.io/index.html</li></li>
-  </ol>
-  </div>
+  <!-- Header with album image -->
+  <header class="bgimg w3-display-container w3-grayscale-min" id="home">
+      <video autoplay loop muted center>
+      <source src="holiday-lights.mp4" type="video/mp4">
+    </video>
+    <div class="w3-display-middle w3-center w3-col 16 w3-padding-large">
+      <button class="w3-button w3-black w3-margin-top">BUY DIGITAL</button>
+      <button class="w3-button w3-black w3-margin-top">BUY PHYSICAL</button>
+      <button class="w3-button w3-black w3-margin-top">STREAM NOW</button>
+    </div>
+  </header>
 
-  <div class="right">
-    <h2>U CAN DO IT</h2>
-    <p>Follow the directions to use GitHub to host your website.</p>
-  </div>
-</div>
 
-<div style="background-color:#e5e5e5;text-align:center;padding:10px;margin-top:7px;">© copyright w3schools.com</div>
+  <!-- End page content -->
+
+  <!-- Footer -->
+  <footer class="w3-center w3-black w3-padding-32 w3-large">
+    <div text-align="center">
+      <div>
+        <a href="index.html">Home</a> |
+        <a href="about.html">About</a> |
+        <a href="discography.html">Discography</a> |
+        <a href="media.html">Media</a> |
+        <a href="merchandise.html">Merchandise</a> |
+        <a href="tour-dates.html">Tour Dates</a> |
+      </div>
+    </div>
+    <p>© COPYRIGHT GABI MUSIC 2019. ALL RIGHTS RESERVED.</p>
+  </footer>
 
 </body>
+
 </html>
