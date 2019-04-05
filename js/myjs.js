@@ -1,0 +1,1 @@
+my mock js file
